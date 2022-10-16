@@ -1,0 +1,518 @@
+
+/*Header*/
+
+
+	header {
+		background-color: #5FB4C9;
+	}
+
+	.fa-solid {
+		color: #fff;
+	}
+
+	header button.hide-for-large img {
+		height:  3rem;
+	}
+
+	header .logo {
+		position: relative;
+		z-index: 12;
+		background-color: #5FB4C9;
+	}
+
+	header i {
+		padding: 0.5rem;
+	}
+
+
+	/* Dropdown menu */
+
+	@media screen and (max-width: 59.9375em){
+ 		 header .menu {
+   		 /* position menu on top, full screen */
+    		position: fixed;
+   		 	top: 0;
+    		left: 0;
+    		z-index: 11;
+    		width: 100%;
+    		height: 50vh;
+    		
+    		
+    		/* menu slide in details */
+    		transform: translateY(-100%);
+    		transition: transform .4s;
+    		/* position content in vertical center */
+   		 	flex-direction: column;
+    		justify-content: center;
+    		/* styling details */
+   		 	padding: 0;
+    		background-color: #5FB4C9;
+    		text-align: left;
+    		margin: 0;
+  		}
+
+  		header i {
+		padding: 0rem;
+		}
+
+  		header .menu i {
+  			margin-left: 1rem;
+  		}
+  
+  		header .menu.slide-in {
+    		transform: translateY(0);
+ 		}
+
+  		header .menu li {
+    		/* override Foundation class and align content on left */
+    		justify-content: flex-start !important;
+    		/* add styling details */
+    		font-size: 1rem;
+  		
+  		}
+
+  		header .menu li a {
+    		/* add styling details */
+    		color: #fff;
+  		}
+
+  		header button {
+    		cursor: pointer;
+  		}
+
+  		header button.hide-for-large {
+    		position: relative;
+    		z-index: 12;
+  		}
+  		header button.hide-for-large.btnToggle {
+    	color: #ffffff;
+  		}
+
+
+
+	}
+
+
+	/* Dropdown menu */
+
+
+	.menu a {
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-weight: 500;
+		color: #fff;
+	}
+
+	.menu a:hover {
+		text-decoration: underline;
+		color: #ECD88A
+	}
+
+	i:hover {
+		color: #ECD88A;
+	}
+
+/*Header*/
+
+
+
+/*General*/
+
+
+	h1 {
+
+		font-family: 'Times New Roman', serif;
+		font-weight: 700;
+		letter-spacing: -2px;
+	}
+
+	body {
+		background-color: #FEFDF5;
+	}
+
+	h2 {
+
+		font-family: 'Times New Roman', serif;
+		font-weight: 700;
+		font-size: 2rem;
+		letter-spacing: -1px;
+
+	
+	}
+
+
+	h3, .h3 { 
+	margin-bottom: 0;
+	}
+
+	h2, .h2 {
+		margin-bottom: 0;
+	}
+
+	.button {
+		font-family: 'IBM Plex Sans', sans-serif;
+		font-weight: 500;
+	}
+
+/*General*/
+
+
+/*Hero*/
+
+
+.hero h1 {
+	font-size: 2.5rem;
+}
+
+.orbit-next {
+    left: auto;
+    right: 12%;
+}
+
+.orbit-previous {
+	left: 12%;
+}
+
+.orbit-previous, .orbit-next {
+    color: #cce7ee;
+    font-size: 2rem;
+}
+
+.orbit-previous:hover,
+.orbit-next:hover,
+.orbit-previous:active,
+.orbit-next:active,
+.orbit-previous:focus,
+.orbit-next:focus {
+ 	background-color: transparent;
+}
+
+.orbit-previous:hover,
+.orbit-next:hover {
+	color: #5FB4C9;
+}
+
+.orbit-bullets button {
+	background-color: #cce7ee;
+}
+
+.orbit-bullets button.is-active {
+    background-color: #5FB4C9;
+}
+
+.orbit-bullets button:hover {
+	background-color: #5FB4C9;
+}
+
+.hero {
+	margin: 1rem;
+}
+
+.hero .button.primary {
+	background-color: #5FB4C9;
+	border-radius: .25rem;
+}
+
+.hero .button.primary:hover {
+	background-color: #cce7ee;
+	border-radius: .25rem;
+	color: #000;
+}
+
+.hero .hollow.button {
+	border-color: #5FB4C9;
+	border-radius: .25rem;
+	color: #5FB4C9;
+}
+
+.hero .hollow.button:hover {
+	border-color: #5FB4C9;
+	border-radius: .25rem;
+	color: #fff;
+	background-color: #5FB4C9
+}
+
+.hero .cell {
+	border: 3px solid;
+	border-color: #5FB4C9;
+	border-radius: .25rem;
+}
+
+.hero .cell:first-child {
+	border-bottom: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+
+}
+
+.hero .cell:last-child {
+	border-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+
+}
+
+
+.orbit-slide .cell {
+	padding: 1rem;
+}
+
+
+@media screen and (min-width: 40em){
+	.hero .cell:first-child {
+		border-right: 0;
+		border-top: 3px solid #5FB4C9;
+		border-bottom: 3px solid #5FB4C9;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: .25rem;
+	}
+
+	.hero .cell:last-child {
+		border-left: 0;
+		border-top: 3px solid #5FB4C9;
+		border-bottom: 3px solid #5FB4C9;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: .25rem;
+	}
+
+
+}
+
+
+
+/*Hero*/
+
+
+/*Main Content*/
+
+.super .grid-container {
+	margin-left:  -0.625rem;
+	margin-right:  -0.625rem;
+}
+
+@media screen and (min-width: 40em) {
+
+	.super {
+		background: url(../img/bg-super.png) no-repeat 50% 50%;
+
+	}
+
+	.super .grid-container {
+	margin-left:  0;
+	margin-right:  0;
+	}
+
+}
+
+
+/*ATTRACTIONS*/
+
+
+.attractions {
+	background-color: #DBF7E4;
+	height: 47.5%;
+	margin-top: 1rem;
+}
+
+
+
+
+
+.attractions h3 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: underline .1rem;
+	font-size: 1.25rem;
+		
+}
+
+.attractions p {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+
+}
+
+/*ATTRACTIONS*/
+
+
+/*EXHIBITIONS*/
+
+
+.exhibitions {
+	background-color: #EE9997;
+  	padding: 2rem;
+  	padding-top: 1rem;
+  	height: 40rem;
+  	overflow: scroll;
+
+}
+
+.exhibitions h3 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 300;
+	text-decoration: underline .1rem;
+	font-size: 1rem;
+		
+}
+
+.exhibitions p {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+
+}
+
+.exhibitions img {
+	padding-bottom: 0.5rem;
+}
+
+
+
+/*EXHIBITIONS*/
+
+/*DIRECTIONS*/
+
+.directions {
+	background-color: #F4FFD7;
+	padding-top: 1rem;
+	height: 50%;
+}
+
+.directions p {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+
+}
+
+.directions .hollow.button {
+	border-color: #5FB4C9;
+	border-radius: .25rem;
+	color: #5FB4C9;
+}
+
+.directions .hollow.button:hover {
+	border-color: #5FB4C9;
+	border-radius: .25rem;
+	color: #fff;
+	background-color: #5FB4C9
+}
+
+/*DIRECTIONS*/
+
+
+/*Main Content*/
+
+
+/*Footer*/
+
+
+footer {
+	background-color: #5FB4C9;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer img {
+	padding-bottom: 0.5rem;
+}
+
+footer p {
+	color: #fff;
+	margin: 0;
+}
+
+.note {
+	font-size: 0.75rem;
+}
+
+.vertical.menu a {
+	padding: 0;
+	padding-bottom: 1rem;
+}
+
+.vertical.menu {
+	padding: 0;
+}
+
+.vertical.menu p {
+	padding-bottom: 0.5rem;
+}
+
+/*Footer*/
+
+
+/*FOR SMALL SCREEN*/
+
+@media screen and (max-width: 768px) {
+
+	.hero h1 {
+		font-size: 2rem;
+	}
+
+	.hero p {
+		font-size: 0.75rem;
+	}
+
+	.hero .cell:last-child {
+		margin-bottom: 0;
+	}
+
+	.hero {
+		padding-top: 1rem;
+	}
+
+
+	.attractions {
+		height: 40rem
+	}
+
+	.attractions h2 {
+		text-align: center;
+	}
+
+	.attractions h3 {
+		font-size: 1.25rem;
+	}
+
+	.attractions p {
+		font-size: 0.75rem;
+	}
+
+	.directions {
+		height: 26rem;
+		text-align: center;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.exhibitions {
+		overflow: visible;
+		height: 100%;
+		padding-left: 4rem;
+		padding-right: 4rem;
+
+
+	}
+
+	.exhibitions h2 {
+		text-align: center;
+	}
+
+	footer {
+		align-content: center;
+		text-align: center;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+}
+
+/*FOR SMALL SCREEN*/
